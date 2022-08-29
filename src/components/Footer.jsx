@@ -102,67 +102,67 @@ const Footer = () => {
                 <img src={f1} className="home__5__img1" alt="" />
                 <img src={f2} className="home__5__img2" alt="" />
             </section>
-    <footer class="footer">
-            <div class="container">
-                <div class="footer__left">
-                    <div class="footer__address__container">
-                        <img src="./assets/logo2.png" alt="" class="footer__address__container__logo"/>
-                        <div class="footer__address">
-                            <img src={Location} class="footer__address__image" alt=""/>
+    <footer className="footer">
+            <div className="container">
+                <div className="footer__left">
+                    <div className="footer__address__container">
+                        <img src="./assets/logo2.png" alt="" className="footer__address__container__logo"/>
+                        <div className="footer__address">
+                            <img src={Location} className="footer__address__image" alt=""/>
                             
                             <p>3433 Agler rd Columbus Ohio 
                                 43219 suite 2700 </p>
                         </div>
                     </div>
                 </div>
-                <div class="footer__right">
-                    <h3 class="">...Faster squad we come to you!!!</h3>
-                    <div class="footer__menus">
-                        <div class="footer__menu">
-                            <h2 class="footer__menu__header">Contact Us</h2>
-                            <ul class="footer__menu__menu">
-                                <li class="footer__menu__item">
-                                    <a href="" class="footer__menu__link">
+                <div className="footer__right">
+                    <h3 className="">...Faster squad we come to you!!!</h3>
+                    <div className="footer__menus">
+                        <div className="footer__menu">
+                            <h2 className="footer__menu__header">Contact Us</h2>
+                            <ul className="footer__menu__menu">
+                                <li className="footer__menu__item">
+                                    <a href="" className="footer__menu__link">
                                         <img src={Phone} alt=""/>
                                         +1 614 659 200
                                     </a>
                                 </li>
-                                <li class="footer__menu__item">
-                                    <a href="" class="footer__menu__link">
+                                <li className="footer__menu__item">
+                                    <a href="" className="footer__menu__link">
                                         <img src={Mail} alt=""/>
                                         Dropsquad1@gmail.com
                                     </a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="footer__menu">
-                            <h2 class="footer__menu__header">Company</h2>
-                            <ul class="footer__menu__menu">
-                                <li class="footer__menu__item">
-                                    <a href="" class="footer__menu__link">Home</a>
+                        <div className="footer__menu">
+                            <h2 className="footer__menu__header">Company</h2>
+                            <ul className="footer__menu__menu">
+                                <li className="footer__menu__item">
+                                    <a href="" className="footer__menu__link">Home</a>
                                 </li>
-                                <li class="footer__menu__item">
-                                    <a href="" class="footer__menu__link">About Us</a>
+                                <li className="footer__menu__item">
+                                    <a href="" className="footer__menu__link">About Us</a>
                                 </li>
-                                <li class="footer__menu__item">
-                                    <a href="" class="footer__menu__link">Pricing</a>
+                                <li className="footer__menu__item">
+                                    <a href="" className="footer__menu__link">Pricing</a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="footer__menu">
-                            <h2 class="footer__menu__header">Various Tests</h2>
-                            <ul class="footer__menu__menu">
-                                <li class="footer__menu__item">
-                                    <a href="" class="footer__menu__link">Employment Drug Screen </a>
+                        <div className="footer__menu">
+                            <h2 className="footer__menu__header">Various Tests</h2>
+                            <ul className="footer__menu__menu">
+                                <li className="footer__menu__item">
+                                    <a href="" className="footer__menu__link">Employment Drug Screen </a>
                                 </li>
-                                <li class="footer__menu__item">
-                                    <a href="" class="footer__menu__link">Alcohol Breath Test</a>
+                                <li className="footer__menu__item">
+                                    <a href="" className="footer__menu__link">Alcohol Breath Test</a>
                                 </li>
-                                <li class="footer__menu__item">
-                                    <a href="" class="footer__menu__link">10 Panel Drug Test</a>
+                                <li className="footer__menu__item">
+                                    <a href="" className="footer__menu__link">10 Panel Drug Test</a>
                                 </li>
-                                <li class="footer__menu__item">
-                                    <a href="" class="footer__menu__link">Instant Drug Test</a>
+                                <li className="footer__menu__item">
+                                    <a href="" className="footer__menu__link">Instant Drug Test</a>
                                 </li>
                             </ul>
                         </div>
@@ -170,12 +170,12 @@ const Footer = () => {
 
                 </div>
             </div>
-            <div class="container">
-                <div class="footer__line"></div>
-                <div class="footer__copyright">
+            <div className="container">
+                <div className="footer__line"></div>
+                <div className="footer__copyright">
                     <h3>Copyrights 2022</h3>
-                    <a href="" class="">Privacy Statement</a>
-                    <a href="" class="">Terms and Conditions</a>
+                    <a href="" className="">Privacy Statement</a>
+                    <a href="" className="">Terms and Conditions</a>
                 </div>
             </div>
         </footer>

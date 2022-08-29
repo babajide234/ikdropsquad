@@ -5264,9 +5264,16 @@ section .center {
   background: #00A3A3;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
+  right: -100%;
+  opacity: 0;
+  display: none;
 }
 
 .navbar__mobile__container.visible {
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-animation: slide-in 0.5s forwards;
           animation: slide-in 0.5s forwards;
   right: 0;
