@@ -1,0 +1,111 @@
+.head{
+    &_text{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 94%;
+        letter-spacing: -0.02em;
+        color: $text_1;
+        span{
+            color: $secondary;
+        }
+        @include mobile{
+            font-size: 60px;
+        }
+    }
+    &_info{
+        color: $text_1;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: -0.02em;
+        @include mobile{
+            font-size: 14px;
+        }
+    }
+    &_sub{
+        font-family: Inter;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        color: $text_1;
+        text-transform: capitalize;
+        @include mobile{
+            font-size: 15px;
+            line-height: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    &_foot{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 64px;
+        color: $secondary;
+        @include mobile{
+            font-size: 15px;
+            line-height: 20px;
+        }
+    }
+    &__1{
+        font-size: 96px;
+        font-weight: 700;
+        line-height: 90px;
+        letter-spacing: -0.02em;
+    }
+
+    &__2{
+        font-size: 35px;
+        font-weight: 800;
+        line-height: 37.6px;
+        letter-spacing: 0em;
+        @include mobile{
+            font-size: 30px;
+        }
+    }
+    &__3{
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 64px;
+        letter-spacing: 0em;
+    }
+    &__4{
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 43.65px;
+    }
+    &__5{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 32.74px;
+    }
+}
+
+.p{
+    &__1{
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 44px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    &__2{
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: -0.02em;
+    }
+    &__3{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: -0.02em;
+        text-align: left;
+    }
+}

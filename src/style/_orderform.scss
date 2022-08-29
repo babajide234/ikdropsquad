@@ -1,0 +1,106 @@
+.orderform{
+    &__container{
+        padding: 56px 152px;
+        form{
+            display: flex;
+            @include mobile{
+                flex-direction: column;
+            }
+        }
+        @include mobile{
+            padding: 56px 10px;
+        }
+    }
+    &__header{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 65px;
+        color: $secondary;
+        text-align: center;
+        margin-bottom: 80px;
+        @include mobile{
+            font-size: 30px;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+    }
+    &__left{
+        width: 50%;
+        @include mobile{
+            width: 100%;
+        }
+    }
+    &__btn{
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        @include mobile{
+            display: none;
+        }
+        &_2{
+            display: none;
+            @include mobile{
+                margin-top: 20px;
+                display: flex;
+                float: right;
+            }
+        }
+
+    }
+    &__right{
+        padding: 0px 30px;
+        h2{
+            margin-bottom: 30px;
+        }
+    }
+    &__field{
+        margin-bottom: 30px;
+        padding: 0px 30px;
+        input,
+        textarea{
+            padding: 15px 20px;
+            width: 100%;            
+            background: #FFFFFF;
+            border: 1px solid #C4C4C4;
+            border-radius: 10px;
+            font-size: 18px;
+            color: $primary;
+            &::placeholder{
+                // font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 0px;
+                color: $text_2;
+                opacity: 0.7;
+            }
+            &:focus{
+                border-color: $secondary;
+                outline: 3px $secondary;
+            }
+        }
+    }
+    &__checkbox{
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        input{
+            margin-right: 20px;
+            width: 20px;
+            height: 20px;
+        }
+        label{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 21px;
+            /* identical to box height, or 88% */
+            letter-spacing: -0.02em;
+            color: $text_2;
+            @include mobile{
+                font-size: 18px;
+            }
+        }
+    }
+}

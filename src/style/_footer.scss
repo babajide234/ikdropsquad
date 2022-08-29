@@ -1,0 +1,126 @@
+.footer{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #004242;
+    min-height: 40vh;
+    padding: 56px 0px;
+    @include mobile{
+        padding: 15px 10px;
+    }
+    .container{
+        justify-content: space-between;
+        @include mobile{
+            flex-direction: column;
+            padding: 0px 10px;
+        }
+    }
+    &__left{
+        width: 30%;
+        @include mobile{
+            width: 100%;
+            order: 2;
+            margin-bottom: 20px;
+        }
+    }
+    &__line{
+        width: 100%;
+        border-bottom: 1px solid #FFFFFF;
+
+    }
+    &__right{
+        width: 60%;
+        @include mobile{
+            width: 100%;
+            order: 1;
+        }
+        h3{
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 44px;
+            margin-bottom: 16px;
+            color: $sec_ter;
+        }
+    }
+    &__address{
+        display: flex;
+        // align-items: center;
+       
+        &__image{
+            margin-right: 16px;
+            width: 40px;
+        }
+        p{
+            color: $text_1;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+        }
+        &__container{
+            &__logo{
+                width: 200px;
+                margin-bottom: 23px;
+            }
+        }
+    }
+    &__menus{
+        display: flex;
+        justify-content: space-between;
+        @include mobile{
+            flex-direction: column;
+        }
+    }
+    &__menu{
+        
+        @include mobile{
+            margin-bottom: 20px;
+        }
+        &__menu{
+            padding-left: 10px;
+        }
+        &__header{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 33px;
+            color: $text_1;
+            margin-bottom: 17px;
+        }
+        &__item {
+
+        }
+        &__link {
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 30px;
+            letter-spacing: -0.02em;
+            color: $text_1;
+            display: flex;
+            align-items: center;
+            img {
+                width: 20px;
+                margin-right: 18px;
+            }
+            &:hover{
+                cursor: pointer;
+                color: rgb(177, 177, 177);
+            }
+        }
+    }
+    &__copyright{
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        @include mobile{
+            font-size: 10px;
+        }
+        a{
+            color: $text_1
+        }
+        color: $text_1
+    }
+}

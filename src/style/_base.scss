@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    // background-color: $body;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+section{
+    // min-height: 100vh;
+}
+
+main{
+}
+
+.text{
+    &__primary{
+        color: $text_1;
+    }
+    &__secondary{
+        color: $text_2;
+    }
+    &__tertairy{
+        color: $text_3;
+    }
+}
+
+.img_1{
+    height: 400px;
+    width: 400px;
+}

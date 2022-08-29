@@ -1,0 +1,125 @@
+.navbar{
+    width: 100%;
+    height: 89px;
+    background-color:$primary;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    @include mobile{
+        height: 70px;
+    }
+    &__container{
+        width: 100%;
+        height: 100%;
+        padding: 0px 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include mobile{
+            padding: 0px 10px;
+        }
+    }
+    &__logo{
+        img{
+            @include mobile{
+                width: 150px;
+            }
+        }
+    }
+    &__menu{
+        width: 68%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include mobile{
+            display: none;
+        }
+        ul{
+            display: flex;
+        }
+        &__item{}
+        &__link{
+            color: $text_1;
+            padding: 0px 12px;
+            font-family: 'inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 21px;
+            &:hover{
+                cursor: pointer;
+                color: $secondary;
+            }
+            &:active{
+                color: $secondary;
+            }
+        }
+    }
+    &__mobile{
+        &__btn{
+            padding: 5px;
+            border: 3px solid $secondary;
+            border-radius: 5px;
+            background: $color_white;
+            display: none;
+            font-size: 20px;
+            color: $secondary;
+            transition: all .3s ease-in-out;
+            &:hover{
+                background: $secondary;
+                color: $text_1;
+            }
+            @include mobile{
+                display: flex;
+
+            }
+        }
+        &__container{
+            padding: 30px 50px;
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            background: $secondary;
+            animation-delay: 2s;
+            &.visible{
+                animation: slide-in 0.5s forwards;
+                right: 0;
+            }
+            &.hidden{
+                animation: slide-in 0.5s reverse;
+                right: -100%;
+            }
+            @include mobile{
+                display: flex;
+            }
+            button{
+                position: absolute;
+                top: 20px;
+                right: 10px;
+            }
+        }
+        &__menu{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &__item{
+            margin-bottom: 15px;
+            &:last-of-type{
+                margin-bottom: 0px;
+            }
+        }
+        &__link{
+            font-size: 30px;
+            font-weight: 600;
+            color: $text_1;
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+}

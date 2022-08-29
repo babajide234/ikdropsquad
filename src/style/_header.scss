@@ -1,0 +1,157 @@
+.header{
+    background: $primary;
+    width: 100%;
+    position: relative;
+    &__container{
+        height: 120vh;
+        padding: 90px 80px 0px;
+        @include mobile{
+            height: 100vh;
+            padding: 0px 20px 0px;
+        }
+    }
+    &__text{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 20px;
+        @include mobile{
+            width: 100%;
+            justify-content: center;
+        }
+    }
+    &__image{
+        position: absolute;
+        width: 652px;
+        height: 652px;
+        right: -130px;
+        top: -40px;
+        background: $highlights;
+        border: 20px solid $highlights;
+        border-radius: 20px;
+        transform: rotate(30.48deg);
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 10px 10px; 
+        grid-template-areas: 
+          "img1 img1"
+          "img2 img3";
+        @include mobile{
+            display: none;
+        }
+        &__1{
+            grid-area: img1; 
+            img{
+                width: 100%;
+                height: 290px;
+            }
+        }
+        &__2{
+            grid-area: img2; 
+            img{
+                width: 100%;
+                flex-basis: 45%;
+                
+            }
+        }
+        &__3{
+            grid-area: img3; 
+            img{
+                width: 100%;
+                flex-basis: 45%;
+                ;
+            }
+        }
+    }
+
+}
+
+.header2{
+    background: $primary;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    &__container{
+        height: 65vh;
+        padding: 0px 80px 0px;
+        @include mobile{
+            height: 30vh;
+            padding: 0px 10px 0px;
+        }
+    }
+    &__text{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        @include mobile{
+            width: 100%;
+            text-align: center;
+        }
+        h1{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 96px;
+            line-height: 94%;
+            letter-spacing: -0.02em;
+            color: #00A3A3;
+            @include mobile{
+                font-size: 50px;
+            }
+        }
+    }
+    &__image{
+        position: absolute;
+        height: 600px;
+        width: 530px;
+        border-radius: 20px;
+        right: -130px;
+        top: -40px;
+        background: $highlights;
+        border: 20px solid $highlights;
+        border-radius: 20px;
+        transform: rotate(50deg);
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 10px 10px; 
+        grid-template-areas: 
+          "img1 img1"
+          "img2 img3";
+        @include mobile{
+            display: none;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: -10px;
+            width: 58%;
+            height: 50%;
+            background: $primary;
+            border-radius: 10px;
+            border: 10px solid $highlights;
+            img{
+                width: 100%;
+                height: 290px;
+            }
+        }
+    }
+    &__img{
+        height: 553px;
+        width: 500px;
+    }
+    &__img1{
+        position: absolute;
+        bottom: 70px;
+        left: 0px;
+        height: 170px;
+        width: 240px;
+        z-index: 100;
+        transform: rotate(-50deg);
+    }
+}
