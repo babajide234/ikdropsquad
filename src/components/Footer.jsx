@@ -80,7 +80,11 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="center">
-                <Link className="btn btn__primary" component={Link} to="/order">Order A Drug Test</Link>
+                    {
+                        !home && (
+                            <Link className="btn btn__primary" component={Link} to="/order">Order A Drug Test</Link>
+                        )
+                    }
                 </div>
             </section>
             <section className="home__5">
