@@ -7,6 +7,8 @@ import g2 from "../assets/Group 36.svg";
 import g3 from "../assets/Group 37.svg";
 import f1 from "../assets/fingerprint.png";
 import f2 from "../assets/dd.png";
+import { Link } from 'react-router-dom';
+// import { Link, animateScroll as scroll } from "react-scroll";
 const Home = () => {
   return (
     <>
@@ -19,7 +21,7 @@ const Home = () => {
                             Testing services. All tests are performed for Substance Abuse and 
                             Mental Health Services Administration (SAMSHA) standards and 
                         include a review by a Medical Review Officer (MRO).</p>
-                        <button className="btn btn__primary">Order A Drug Test</button>
+                        <Link className="btn btn__primary" component={Link} to="/order">Order A Drug Test</Link>
                     </div>
                     <div className="col-2">
                         <img src={img1} alt="" className="" />
@@ -40,11 +42,11 @@ const Home = () => {
                             <li className="p__2"><img src={check} alt="" /> Compliance with state or federal regulations.</li>
                             <li className="p__2"><img src={check} alt="" /> Being able to identify and refer employees who have drug and/or alcohol problems. </li>
                         </ul>
-                        <button className="btn btn__primary">Order A Drug Test</button>
+                        <button className="btn btn__primary" component={Link} to="/order">Order A Drug Test</button>
                     </div>
                 </div>
             </section>
-            <section className="home__3">
+            <section className="home__3" id='#test'>
                 <div className="container">
                     <div className="col-1">
                         <div className="home__3__heading">
@@ -96,7 +98,7 @@ const Home = () => {
                 </div>
                 <div className="container">
                     <div className="home__3__left">
-                        <button className="btn btn__primary">See Full Pricing</button>
+                        <button className="btn btn__primary" component={Link} to="/pricing">See Full Pricing</button>
                     </div>
                 </div>
             </section>

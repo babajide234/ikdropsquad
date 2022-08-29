@@ -7,7 +7,20 @@ import g2 from "../assets/Group 36.svg";
 import g3 from "../assets/Group 37.svg";
 import f1 from "../assets/fingerprint.png";
 import f2 from "../assets/dd.png";
+import { useLocation, Link } from 'react-router-dom';
+
 const Footer = () => {
+    const [ home, setHome] = React.useState(true)
+    const location = useLocation();
+    
+    React.useEffect(()=>{
+        console.log(location.pathname )
+        if(location.pathname === '/'){
+            setHome(true)
+        }else{
+            setHome(false)
+        }
+    },[location])
   return (
     <>
     <section className="home__4">
@@ -25,10 +38,10 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="container">
-                    <div className="col-3"> <div className="card card__box">
+                    <div className="col-3"> 
+                    <div className="card card__box">
                         <img src={g1} alt="" />
                         <div className="">
-
                             <h2 className="head__5 mb-18">Sample Collection</h2>
                             <p className="">Once a sample is collected from 
                                 the candidate, an initial screen is 
@@ -65,6 +78,9 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="center">
+                <Link className="btn btn__primary" component={Link} to="/order">Order A Drug Test</Link>
                 </div>
             </section>
             <section className="home__5">

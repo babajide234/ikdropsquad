@@ -2,6 +2,8 @@ import React from 'react'
 import img1 from '../assets/image 9.png';
 import img2 from '../assets/image 11.png';
 import img3 from '../assets/image 11.png';
+import {Link} from 'react-router-dom';
+
 const Hero = () => {
   return (
     <>
@@ -15,7 +17,7 @@ const Hero = () => {
                         <p class="head_info mb-30">We offer drug and alcohol test for pre-employment, postaccidents, 
                             random, probation, Court ordered ,DUI, personal,and more. 
                             We cater to both companies and individuals.</p>
-                        <button class="btn btn__primary mb-20">Order A Drug Test</button>
+                        <Link to="/order" class="btn btn__primary mb-20">Order A Drug Test</Link>
                         <h4 class="head_foot">We Utilize SAMSA Certified Laboratories</h4>
                     </div>
                     <div class="header__image">

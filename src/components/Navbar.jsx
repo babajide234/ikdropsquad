@@ -1,10 +1,22 @@
 import React from 'react'
 import Logo from '../assets/Logo.svg';
 import { FiMenu, FiX } from "react-icons/fi";
-import { Link } from 'react-router-dom';
+import { Link, useLocation} from 'react-router-dom';
+import { Link as Li, animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
     const [show, setShow] = React.useState(false);
+    const [ home, setHome] = React.useState(true)
+    const location = useLocation();
+    
+    React.useEffect(()=>{
+        console.log(location.pathname )
+        if(location.pathname === '/'){
+            setHome(true)
+        }else{
+            setHome(false)
+        }
+    },[location])
 
     const toggleMenu = () => setShow(!show) 
   return (
@@ -17,10 +29,12 @@ const Navbar = () => {
                 <div className="navbar__menu">
 
                     <ul className="">
-                        <li className="navbar__menu__item"><a href="index.html" className="navbar__menu__link">Home</a></li>
-                        <li className="navbar__menu__item"><a href="test.html" className="navbar__menu__link">Various Test</a></li>
-                        <li className="navbar__menu__item"><a href="about.html" className="navbar__menu__link">About</a></li>
-                        <li className="navbar__menu__item"><a href="pricing.html" className="navbar__menu__link">Pricing</a></li>
+                        <li className="navbar__menu__item"><Link to="/" className="navbar__menu__link">Home</Link></li>
+                        {
+                            home && (<li className="navbar__menu__item"><Li spy={true} smooth={true} offset={-70} duration={500} to="#test" className="navbar__menu__link">Various Test</Li></li>)
+                        }
+                        <li className="navbar__menu__item"><Link to="/about" className="navbar__menu__link">About</Link></li>
+                        <li className="navbar__menu__item"><Link to="/pricing" className="navbar__menu__link">Pricing</Link></li>
                     </ul>
                     <button className="btn btn__navbar">call for enquires</button>
                 </div>
@@ -32,10 +46,12 @@ const Navbar = () => {
                         <FiX/>
                     </button>
                     <ul className="navbar__mobile__menu">
-                        <li className="navbar__mobile__item"><Link to='' className="navbar__mobile__link">Home</Link></li>
-                        <li className="navbar__mobile__item"><Link to='' className="navbar__mobile__link">Various Test</Link></li>
-                        <li className="navbar__mobile__item"><Link to='' className="navbar__mobile__link">About</Link></li>
-                        <li className="navbar__mobile__item"><Link to='' className="navbar__mobile__link">Pricing</Link></li>
+                        <li className="navbar__mobile__item"><Link to='/' className="navbar__mobile__link">Home</Link></li>
+                        {
+                            home && (<li className="navbar__menu__item"><Li spy={true} smooth={true} offset={-70} duration={500} to="#test" className="navbar__menu__link">Various Test</Li></li>)
+                        }
+                        <li className="navbar__mobile__item"><Link to='/about' className="navbar__mobile__link">About</Link></li>
+                        <li className="navbar__mobile__item"><Link to='/pricing' className="navbar__mobile__link">Pricing</Link></li>
                     </ul>
                 </div>
             </div>
