@@ -4,18 +4,16 @@
     background: none;
 
     &__navbar{
-        padding: 20px 48px;
+        padding: 1rem 1.9rem;
         background: $text_1;
         color: $secondary;
         border: 3px solid $secondary;
         border-radius: 100px;
-        font-size: 20px;
+        font-size: 1.2rem;
         text-transform: capitalize;
         // fonts
         font-family: 'Inter';
-        font-style: normal;
         font-weight: 700;
-        font-size: 24px;
         line-height: 21px;
         transition: all .3s ease-in-out;
         &:hover{
@@ -26,14 +24,12 @@
     }
     &__primary{
         width: fit-content;
-        padding: 20px 48px;
+        padding: 1.2rem 1.9rem;
         border-radius: 100px;
-        font-size: 20px;
+        font-size: 1.3rem;
         text-transform: capitalize;
         font-family: 'Inter';
-        font-style: normal;
         font-weight: 700;
-        font-size: 21px;
         background: $secondary;
         color: $text_1;
         transition: all .3s ease-in-out;
@@ -52,7 +48,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 22px 48px;
+        padding: 1.2rem 1.9rem;
         width: 227px;
         border: 3px solid #00A3A3;
         border-radius: 100px;

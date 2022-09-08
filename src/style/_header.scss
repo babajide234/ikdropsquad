@@ -3,8 +3,9 @@
     width: 100%;
     position: relative;
     &__container{
-        height: 120vh;
+        height: 100vh;
         padding: 90px 80px 0px;
+        // overflow: hidden;
         @include mobile{
             height: 100vh;
             padding: 0px 20px 0px;
@@ -26,8 +27,8 @@
         position: absolute;
         width: 652px;
         height: 652px;
-        right: -130px;
-        top: -40px;
+        right: -160px;
+        top: -90px;
         background: $highlights;
         border: 20px solid $highlights;
         border-radius: 20px;

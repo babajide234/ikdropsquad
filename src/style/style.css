@@ -84,17 +84,15 @@ section .center {
 }
 
 .btn__navbar {
-  padding: 20px 48px;
+  padding: 1rem 1.9rem;
   background: #FFFFFF;
   color: #00A3A3;
   border: 3px solid #00A3A3;
   border-radius: 100px;
-  font-size: 20px;
+  font-size: 1.2rem;
   text-transform: capitalize;
   font-family: 'Inter';
-  font-style: normal;
   font-weight: 700;
-  font-size: 24px;
   line-height: 21px;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -110,14 +108,12 @@ section .center {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 20px 48px;
+  padding: 1.2rem 1.9rem;
   border-radius: 100px;
-  font-size: 20px;
+  font-size: 1.3rem;
   text-transform: capitalize;
   font-family: 'Inter';
-  font-style: normal;
   font-weight: 700;
-  font-size: 21px;
   background: #00A3A3;
   color: #FFFFFF;
   -webkit-transition: all .3s ease-in-out;
@@ -150,7 +146,7 @@ section .center {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 22px 48px;
+  padding: 1.2rem 1.9rem;
   width: 227px;
   border: 3px solid #00A3A3;
   border-radius: 100px;
@@ -543,6 +539,44 @@ section .center {
   .orderform__checkbox label {
     font-size: 18px;
   }
+}
+
+.orderform__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.orderform__center p {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.orderform__center .orderform__header {
+  margin-bottom: 20px;
+}
+
+.orderform__center img {
+  height: 192px;
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+.orderform__center .btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .wrapper {
@@ -5340,7 +5374,7 @@ section .center {
 }
 
 .header__container {
-  height: 120vh;
+  height: 100vh;
   padding: 90px 80px 0px;
 }
 
@@ -5380,8 +5414,8 @@ section .center {
   position: absolute;
   width: 652px;
   height: 652px;
-  right: -130px;
-  top: -40px;
+  right: -160px;
+  top: -90px;
   background: #FFFF00;
   border: 20px solid #FFFF00;
   border-radius: 20px;
@@ -5656,7 +5690,7 @@ section .center {
 }
 
 .home__4 {
-  padding: 30px 0px 160px;
+  padding: 30px 0px 0px;
 }
 
 .home__5 {

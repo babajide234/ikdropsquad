@@ -86,8 +86,8 @@ const Footer = () => {
                         )
                     }
                 </div>
-            </section>
-            <section className="home__5">
+    </section>
+    <section className="home__5">
                 <div className="container">
                     <div className="col-1">
                         <div className="home__5__center">
@@ -101,7 +101,7 @@ const Footer = () => {
                 </div>
                 <img src={f1} className="home__5__img1" alt="" />
                 <img src={f2} className="home__5__img2" alt="" />
-            </section>
+    </section>
     <footer className="footer">
             <div className="container">
                 <div className="footer__left">
@@ -124,13 +124,13 @@ const Footer = () => {
                                 <li className="footer__menu__item">
                                     <a href="" className="footer__menu__link">
                                         <img src={Phone} alt=""/>
-                                        +1 614 659 200
+                                        +1 614 615 9200
                                     </a>
                                 </li>
                                 <li className="footer__menu__item">
                                     <a href="" className="footer__menu__link">
                                         <img src={Mail} alt=""/>
-                                        Dropsquad1@gmail.com
+                                        ikdropsquad1@gmail.com
                                     </a>
                                 </li>
                             </ul>
@@ -139,13 +139,13 @@ const Footer = () => {
                             <h2 className="footer__menu__header">Company</h2>
                             <ul className="footer__menu__menu">
                                 <li className="footer__menu__item">
-                                    <a href="" className="footer__menu__link">Home</a>
+                                    <Link to="/" className="footer__menu__link">Home</Link>
                                 </li>
                                 <li className="footer__menu__item">
-                                    <a href="" className="footer__menu__link">About Us</a>
+                                    <Link to="/about" className="footer__menu__link">About Us</Link>
                                 </li>
                                 <li className="footer__menu__item">
-                                    <a href="" className="footer__menu__link">Pricing</a>
+                                    <Link to="/pricing" className="footer__menu__link">Pricing</Link>
                                 </li>
                             </ul>
                         </div>
@@ -153,16 +153,16 @@ const Footer = () => {
                             <h2 className="footer__menu__header">Various Tests</h2>
                             <ul className="footer__menu__menu">
                                 <li className="footer__menu__item">
-                                    <a href="" className="footer__menu__link">Employment Drug Screen </a>
+                                    <Link to="/" className="footer__menu__link">Employment Drug Screen </Link>
                                 </li>
                                 <li className="footer__menu__item">
-                                    <a href="" className="footer__menu__link">Alcohol Breath Test</a>
+                                    <Link to="/" className="footer__menu__link">Alcohol Breath Test</Link>
                                 </li>
                                 <li className="footer__menu__item">
-                                    <a href="" className="footer__menu__link">10 Panel Drug Test</a>
+                                    <Link to="/" className="footer__menu__link">10 Panel Drug Test</Link>
                                 </li>
                                 <li className="footer__menu__item">
-                                    <a href="" className="footer__menu__link">Instant Drug Test</a>
+                                    <Link to="/" className="footer__menu__link">Instant Drug Test</Link>
                                 </li>
                             </ul>
                         </div>

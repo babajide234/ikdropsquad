@@ -1,6 +1,6 @@
 import React from 'react';
 import img1 from '../assets/logo2.png';
-import img2 from '../assets/image 9.png';
+import img2 from '../assets/image 9.webp';
 
 const Header = (props) => {
   return (
