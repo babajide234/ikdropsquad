@@ -6,6 +6,12 @@
 
 @mixin mobile {
     @include responsive($mobile){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @include responsive($tablet){
         @content
     }
 }

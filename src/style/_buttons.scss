@@ -21,6 +21,11 @@
             background: $secondary;
             color: $text_1;
         }
+        @include tablet{
+            font-size: 1rem;
+            padding: .6rem .8rem;
+
+        }
     }
     &__primary{
         width: fit-content;

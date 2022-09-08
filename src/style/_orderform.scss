@@ -1,6 +1,8 @@
 .orderform{
     &__container{
-        padding: 56px 152px;
+        // padding: 56px 152px;
+        width: 90%;
+        margin: auto;
         form{
             display: flex;
             @include mobile{
@@ -9,6 +11,9 @@
         }
         @include mobile{
             padding: 56px 10px;
+        }
+        @include tablet{
+            font-size: 2.0rem;
         }
     }
     &__header{
@@ -23,6 +28,9 @@
             font-size: 30px;
             line-height: 30px;
             margin-bottom: 30px;
+        }
+        @include tablet{
+            font-size: 2.0rem;
         }
     }
     &__left{

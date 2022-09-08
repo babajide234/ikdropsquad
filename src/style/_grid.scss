@@ -10,20 +10,29 @@
     display: grid;
 }
 .container{
-    padding: 0px 150px;
+    width: 90%;
+    margin: auto;
     display: flex;
     align-items: center;
     flex-flow: row wrap;
     @include mobile{
         flex-direction: column;
-        padding: 0px 20px;
-        width: 100%;
+        
+        width: 90%;
+
+    }
+    @include tablet{
+        width: 90%;
+
     }
 }
 @for $i from 0 to 12 {
     
     .col-#{$i + 1}{
         width: calc(100% / #{$i + 1});
+        @include tablet{
+            width:calc(100% / #{$i + 1});
+        }
         @include mobile{
             width: 100%;
         }

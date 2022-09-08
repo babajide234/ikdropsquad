@@ -4,6 +4,9 @@
     @include mobile{
         padding: 20px 30px;
     }
+    @include tablet{
+        padding: 20px 10px;
+    }
     &__normal{
         border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 20px;
@@ -27,6 +30,10 @@
             padding: 0px 20px 0px;
             min-height: 300px;
             text-align: center;
+        }
+        @include tablet{
+            min-height: 450px;
+            padding: 0px 20px 0px;
         }
         h2{
             color: $text_3;

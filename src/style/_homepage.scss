@@ -1,7 +1,7 @@
 .home{
     &__1{
         width: 100%;
-        min-height: 100vh;
+        min-height: 50vh;
         display: flex;
         align-items: center;
         @include mobile{
@@ -11,13 +11,23 @@
                 margin-top: 50px;
             }
         }
+        @include tablet{
+            width:100%;
+        }
     }
     &__2{
-        min-height: 100vh;
+        min-height: 50vh;
         background-color: $body;
         @include mobile{
             padding-top: 50px;
             padding-bottom: 50px;
+            img{
+                width: 90%;
+                margin-top: 50px;
+            }
+        }
+        @include tablet{
+            padding: 10px 0px;
             img{
                 width: 90%;
                 margin-top: 50px;
@@ -34,25 +44,41 @@
                     width: 21px;
                     margin-right: 20px;
                 }
+                @include tablet{
+                    margin-bottom: 10px;
+                    img{
+                        margin-top: 0px;
+                    }
+                }
             }
         }
     }
     &__3{
-        min-height: 100vh;
+        min-height: 50vh;
         background-color: $primary;
         padding: 30px 0px;
         color: $text_1;
+        @include tablet{
+           
+        }
         &__left{
             width: 100%;
             display: flex;
             justify-content: flex-end;
             padding: 20px 0px;
+            @include tablet{
+                padding: 0px 0px;
+                width: 98%;
+            }
         }
         &__heading{
             width: 33%;
             margin: auto;
             @include mobile{
                 width: 100%;
+            }
+            @include tablet{
+                width: 90%;
             }
             h2{
                 //styleName: Heading / H2;
@@ -152,6 +178,9 @@
     @include mobile{
         width: 100%;
     }
+    @include tablet{
+        width: 90%;
+    }
     h2{
         color: $secondary;
         font-size: 48px;
@@ -161,12 +190,18 @@
             font-size: 38px;
             line-height: 40px;
         }
+        @include tablet{
+            margin-bottom: 16px;
+        }
     }
     h3{
         font-weight: 400;
         margin-bottom: 32px;
         @include mobile{
             margin-bottom: 0px;
+        }
+        @include tablet{
+            margin-bottom: 16px;
         }
     }
 }
